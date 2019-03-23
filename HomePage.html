@@ -1,1 +1,75 @@
-首页
+
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>调查问卷</title>
+</head>
+<body>
+<h3>潜在用户网络调查</h3>
+<form method = "post" action = "/ServletProject/testServlet">
+<table>
+<tr>
+<td align = "right">姓名:</td>
+<td><input type = "text" name = "nametext"/></td>
+</tr>
+<tr>
+<td align = "right">EMAIL:</td>
+<td><input type = "text" name = "emailname"/></td>
+</tr>
+<tr>
+<td align = "right">年龄:</td><td><input type = "radio" name = "age" value = "小于18">小于18
+        <input type = "radio" name = "age" value = "18-25">18-25
+        <input type = "radio" name = "age" value = "25-40">25-40
+        <input type = "radio" name = "age" value = "大于40">大于40
+</td>
+</tr>
+<tr>
+<td align = "right">编程时间:</td><td><select name = "time">
+<option value = "<16个月">小于16个月</option>
+<option value = "6-12个月">6-12个月</option>
+<option value = ">12个月">大于12个月</option>
+</select>
+</td>
+</tr>
+<tr>
+<td align = "right">使用操作系统：</td><td>
+<select  multiple = "multiple" name = "system" size = "6">
+<option value = "WinXP">WinXP</option>
+<option value = "Win2000/2003">Win2000/2003</option>
+<option value = "FreeBSD">FreeBSD</option>
+<option value = "MacOS">MacOS</option>
+<option value = "Linux">Linux</option>
+<option value = "Unix">Unix</option>
+</select>
+</td>
+</tr>
+<tr>
+<td align = "right">使用编程语言：</td><td>
+<input type = "checkbox" name = "language" value = "C">C
+<input type = "checkbox" name = "language" value = "C++">C++
+<input type = "checkbox" name = "language" value = "C#">C#
+<input type = "checkbox" name = "language" value = "python">python
+<input type = "checkbox" name = "language" value = "Java">Java
+<input type = "checkbox" name = "language" value = "VB">VB
+<input type = "checkbox" name = "language" value = "Depti">Depti
+</td>
+</tr>
+<tr>
+<td align = "right">建议：</td><td>
+<textarea name = "textarea" cols = "20" rows = "5">请输入建议</textarea>
+</td>
+</tr>
+<tr>
+<td></td><td>
+<input type = "submit" name = "submit" value = "确定">
+<input type = "reset" name = "reset" value = "清除">
+</td>
+</tr>
+</table>
+</form>
+
+</body>
+</html>
